@@ -1,12 +1,20 @@
 #For the data format, please refer to https://docs.ultralytics.com/datasets/segment/coco/
 
-path: '/home/q1/dwc/sa'
+path: '/kaggle/input/car-damage-yolo'
 
-train: ['train',]
+train: '/kaggle/input/car-damage-yolo/train/images'
 
-val: 'train'
-test: 'train'
+val: '/kaggle/input/car-damage-yolo/train/images'
+test: '/kaggle/input/car-damage-yolo/train/images'
 
 # Classes
-names:
-  0: object
+nc: 1
+names: ['Car-Damage']
+
+
+roboflow:
+  workspace: dan-vmm5z
+  project: car-damage-coco-dataset
+  version: 9
+  license: Public Domain
+  url: https://universe.roboflow.com/dan-vmm5z/car-damage-coco-dataset/dataset/9
